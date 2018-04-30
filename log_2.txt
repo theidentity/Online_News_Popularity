@@ -1,0 +1,78 @@
+balu@balu-GL702VMK:~/Work/OnlineNewsPopularity$ python model_norm.py 
+MLPRegressor(activation='tanh', alpha=0.0001, batch_size='auto', beta_1=0.9,
+       beta_2=0.999, early_stopping=False, epsilon=1e-08,
+       hidden_layer_sizes=(64,), learning_rate='adaptive',
+       learning_rate_init=0.01, max_iter=10000, momentum=0.9,
+       nesterovs_momentum=True, power_t=0.5, random_state=None,
+       shuffle=True, solver='sgd', tol=0.0001, validation_fraction=0.1,
+       verbose=False, warm_start=False)
+/usr/local/lib/python2.7/dist-packages/sklearn/neural_network/multilayer_perceptron.py:1306: DataConversionWarning: A column-vector y was passed when a 1d array was expected. Please change the shape of y to (n_samples, ), for example using ravel().
+  y = column_or_1d(y, warn=True)
+0.000507956197953 -2.09882996787
+0.00065950071578 -1.29426477773
+0.000423044376222 -2.0170475366
+0.00035836074182 -1.12413684769
+[0.0005079561979529091, 0.0006595007157796007, 0.00042304437622187865, 0.0003583607418202474]
+[-2.0988299678650812, -1.2942647777277712, -2.017047536597905, -1.1241368476891744]
+0.000487215507944 -1.63356978247
+0.000487215507944 -1.63356978247
+MLPRegressor(activation='tanh', alpha=0.0001, batch_size='auto', beta_1=0.9,
+       beta_2=0.999, early_stopping=False, epsilon=1e-08,
+       hidden_layer_sizes=(64, 64), learning_rate='adaptive',
+       learning_rate_init=0.01, max_iter=10000, momentum=0.9,
+       nesterovs_momentum=True, power_t=0.5, random_state=None,
+       shuffle=True, solver='sgd', tol=0.0001, validation_fraction=0.1,
+       verbose=False, warm_start=False)
+0.000333483550674 -1.03444475091
+0.000556864774011 -0.937215845871
+0.00036062075672 -1.57185776922
+0.000495901518498 -1.9393919739
+[0.00033348355067443035, 0.0005568647740112777, 0.00036062075672048155, 0.0004959015184980645]
+[-1.034444750914885, -0.937215845870849, -1.571857769216535, -1.9393919738985161]
+0.000436717649976 -1.37072758498
+0.000436717649976 -1.37072758498
+MLPRegressor(activation='relu', alpha=0.0001, batch_size='auto', beta_1=0.9,
+       beta_2=0.999, early_stopping=False, epsilon=1e-08,
+       hidden_layer_sizes=(64, 64), learning_rate='adaptive',
+       learning_rate_init=0.01, max_iter=10000, momentum=0.9,
+       nesterovs_momentum=True, power_t=0.5, random_state=None,
+       shuffle=True, solver='sgd', tol=0.0001, validation_fraction=0.1,
+       verbose=False, warm_start=False)
+0.000501160052633 -2.05736950559
+0.000692593963482 -1.40938925109
+0.000463742345586 -2.30729535719
+0.000499995789197 -1.96366023278
+[0.0005011600526329751, 0.0006925939634820955, 0.00046374234558571185, 0.0004999957891965079]
+[-2.057369505588509, -1.4093892510874442, -2.3072953571936576, -1.96366023277867]
+0.000539373037724 -1.93442858666
+0.000539373037724 -1.93442858666
+MLPRegressor(activation='relu', alpha=0.0001, batch_size='auto', beta_1=0.9,
+       beta_2=0.999, early_stopping=False, epsilon=1e-08,
+       hidden_layer_sizes=(64, 64), learning_rate='adaptive',
+       learning_rate_init=0.01, max_iter=10000, momentum=0.9,
+       nesterovs_momentum=True, power_t=0.5, random_state=None,
+       shuffle=True, solver='adam', tol=0.0001, validation_fraction=0.1,
+       verbose=False, warm_start=False)
+0.000162981636864 0.00571666895277
+0.00028904671456 -0.00553294403711
+0.000146041434103 -0.0415312760711
+0.000172503970405 -0.022494925223
+[0.00016298163686427053, 0.0002890467145597826, 0.00014604143410279857, 0.00017250397040518718]
+[0.005716668952767789, -0.005532944037108356, -0.04153127607109508, -0.022494925222967366]
+0.000192643438983 -0.0159606190946
+0.000192643438983 -0.0159606190946
+MLPRegressor(activation='relu', alpha=0.0001, batch_size='auto', beta_1=0.9,
+       beta_2=0.999, early_stopping=False, epsilon=1e-08,
+       hidden_layer_sizes=(128, 128), learning_rate='adaptive',
+       learning_rate_init=0.001, max_iter=10000, momentum=0.9,
+       nesterovs_momentum=True, power_t=0.5, random_state=None,
+       shuffle=True, solver='adam', tol=0.0001, validation_fraction=0.1,
+       verbose=False, warm_start=False)
+0.00021546233519 -0.314446292661
+0.000420513836088 -0.46287950809
+0.000173055699652 -0.2341903159
+0.000252461851351 -0.496434900674
+[0.00021546233519012772, 0.0004205138360884086, 0.0001730556996518437, 0.0002524618513512992]
+[-0.31444629266096125, -0.46287950809024236, -0.23419031589958195, -0.4964349006736617]
+0.00026537343057 -0.376987754331
+0.00026537343057 -0.376987754331

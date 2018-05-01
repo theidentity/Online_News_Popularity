@@ -10,7 +10,7 @@ print df.describe()
 
 df_new = pd.DataFrame()
 
-for col in df.columns[1:12]:
+for col in df.columns[2:12]:
 	print col
 
 	df_col = df[col]

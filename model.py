@@ -8,16 +8,16 @@ from sklearn.externals import joblib
 
 def get_data():
 	df = pd.read_csv('csv/prep_data_log.csv')
-	X = df.iloc[:,:44]
-	y = df.iloc[:,44:]
+	X = df.iloc[:,:43]
+	y = df.iloc[:,43:]
 	
 	X_train,X_test,y_train,y_test = train_test_split(X,y,test_size=0.22,random_state=42)
 	return (X_train,y_train),(X_test,y_test)
 
 def get_folds(n=4):
 	df = pd.read_csv('csv/prep_data_log.csv')
-	X = df.iloc[:,:44]
-	y = df.iloc[:,44:]
+	X = df.iloc[:,:43]
+	y = df.iloc[:,43:]
 	
 	folds = KFold(n_splits=n,random_state=42,shuffle=True)
 	for train_index, test_index in folds.split(X,y):
@@ -63,6 +63,7 @@ def load_model(name):
 	return clf
 
 def regression_model_A():
+	# 
 	# 0.150882809428 0.0760153592224
 	model = MLPRegressor(
 		hidden_layer_sizes=(64,),
@@ -78,7 +79,8 @@ def regression_model_A():
 	
 
 def regression_model_B():
-	# 0.150265707345 0.0798210711997
+	# 0.150945190536 0.0755790777078
+
 	model = MLPRegressor(
 		hidden_layer_sizes=(64,64),
 		activation = 'tanh',
@@ -92,7 +94,8 @@ def regression_model_B():
 	return model
 
 def regression_model_C():
-	# 0.148671391315 0.0895433165118
+	# 0.149296602371 0.0857604666608
+
 	model = MLPRegressor(
 		hidden_layer_sizes=(64,64),
 		activation = 'relu',
@@ -106,7 +109,8 @@ def regression_model_C():
 	return model
 
 def regression_model_D():
-	# 0.153410696965 0.060968906771
+	# 0.147264623193 0.0982413652645
+
 	model = MLPRegressor(
 		hidden_layer_sizes=(64,64),
 		activation = 'relu',
@@ -120,7 +124,8 @@ def regression_model_D():
 	return model
 
 def regression_model_E():
-	# 0.145775867623 0.107381891391
+	# 0.146950175116 0.100060059357
+
 	model = MLPRegressor(
 		hidden_layer_sizes=(128,128),
 		activation = 'relu',
